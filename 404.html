@@ -7,7 +7,8 @@
       var path = window.location.href.split('/'); // Get the current URL
       path.pop(); // Remove the last part (the invalid path)
       path.push(''); // Add an empty string (to ensure it's a directory)
-      var url = path.join('/') + 'index.html'; // Reconstruct the URL
+      // var url = path.join('/') + 'index.html'; // Reconstruct the URL
+      var url = path.join('/') + '';
       window.location.replace(url); // Redirect to the index.html
     </script>
   </head>
